@@ -26,7 +26,7 @@ The Robot Hat library includes an enhanced TTS system with the following capabil
 - **No Message Repetition**: Fixed threading issues that caused duplicate speech
 - **Thread-Safe Operations**: Proper speech queue management prevents conflicts
 - **Blocking/Non-blocking Speech**: Choose whether to wait for speech completion
-- **Volume Control**: Adjustable volume gain (default 2.0x for louder speech)
+- **Volume Control**: Adjustable volume gain using `tts.volume()` method (default 2.0x for louder speech)
 
 #### Quick TTS Example
 
@@ -43,7 +43,7 @@ tts.say("Hello, Robot Hat!")
 tts.say("This message will complete before continuing", blocking=True)
 
 # Adjust volume (1.0 = normal, 2.0 = double volume)
-tts.set_volume_gain(3.0)  # Even louder
+tts.volume(3.0)  # Even louder
 tts.say("This will be very loud!")
 ```
 
