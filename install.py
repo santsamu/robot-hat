@@ -114,6 +114,7 @@ APT_INSTALL_LIST = [
     'raspi-config',
     "i2c-tools",
     "espeak",
+    "espeak-ng",  # Enhanced TTS engine with better voice quality
     'libsdl2-dev',
     'libsdl2-mixer-dev',
     'portaudio19-dev',  # pyaudio
